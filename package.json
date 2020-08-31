@@ -20,6 +20,18 @@
 				"title": "Validate",
 				"key": "ctrl+alt+v",
         		"mac": "cmd+alt+v"
+			},
+			{
+				"command": "extension.escapeJson",
+				"title": "Escape",
+				"key": "ctrl+alt+'",
+        		"mac": "cmd+alt+'"
+			},
+			{
+				"command": "extension.unescapeJson",
+				"title": "Unescape",
+				"key": "ctrl+alt+;",
+        		"mac": "cmd+alt+;"
 			}
 		]
 	},
