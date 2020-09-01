@@ -32,6 +32,18 @@
 				"title": "Unescape",
 				"key": "ctrl+alt+;",
         		"mac": "cmd+alt+;"
+			},
+			{
+				"command": "extension.beautifyJson",
+				"title": "Beautify",
+				"key": "ctrl+alt+b",
+				"mac": "cmd+alt+b"
+			},
+			{
+				"command": "extension.uglifyJson",
+				"title": "Uglify",
+				"key": "ctrl+alt+u",
+				"mac": "cmd+alt+u"
 			}
 		]
 	},
