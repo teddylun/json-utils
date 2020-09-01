@@ -4,12 +4,9 @@ import {
   window,
   ExtensionContext,
   commands,
-  TextEditor,
   workspace,
   Range,
   Position,
-  Selection,
-  TextEditorEdit,
 } from "vscode";
 import EditorHelper from "./editorHelper";
 import JSONHelper, { FixStatus } from "./JSONHelper";
@@ -211,6 +208,7 @@ export function activate(context: ExtensionContext) {
   context.subscriptions.push(unescapeJson);
   context.subscriptions.push(beautifyJson);
   context.subscriptions.push(uglifyJson);
+  context.subscriptions.push(editorHelper.decoration);
   context.subscriptions.push(fixJson);
 }
 
