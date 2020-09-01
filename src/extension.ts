@@ -1,8 +1,18 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
-import { window, ExtensionContext, commands } from "vscode";
+import {
+  window,
+  ExtensionContext,
+  commands,
+  TextEditor,
+  workspace,
+  Range,
+  Position,
+  Selection,
+  TextEditorEdit,
+} from "vscode";
 import EditorHelper from "./editorHelper";
-import JSONHelper from "./JSONHelper";
+import JSONHelper, { FixStatus } from "./JSONHelper";
 
 enum JsonValidationMessage {
   valid = "Valid JSON",
@@ -15,6 +25,7 @@ enum RegisterCommand {
   unescape = "extension.unescapeJson",
   beautify = "extension.beautifyJson",
   uglify = "extension.uglifyJson",
+  fix = "extension.fixJson",
 }
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -156,11 +167,51 @@ export function activate(context: ExtensionContext) {
     }
   });
 
+  /**
+   * fixJson
+   */
+  let fixJson = commands.registerCommand(RegisterCommand.fix, () => {
+    let editor = window.activeTextEditor;
+    if (!editor) {
+      return;
+    }
+    const { document, selection } = editor;
+    const { decoration } = editorHelper;
+    const text = selection.isEmpty
+      ? document.getText()
+      : document.getText(selection);
+    const indentation =
+      ((workspace
+        .getConfiguration("jsonUtils")
+        .get("indentationSpaces") as unknown) as number) ||
+      workspace.getConfiguration("editor", null).get("tabSize");
+    const result = jsonHelper.fixText(text, { indentation });
+    if (result.status === FixStatus.success) {
+      if (result.text) {
+        editorHelper.setText(editor, result.text);
+      }
+      editor.setDecorations(decoration, []);
+    } else {
+      const { line, message, column, foundLength } = result.error;
+      window.setStatusBarMessage(`Fixing failed: ${message}`, 500);
+      editor.setDecorations(decoration, [
+        {
+          range: new Range(
+            new Position(line - 1, column - 1),
+            new Position(line - 1, column - 1 + foundLength)
+          ),
+          hoverMessage: message,
+        },
+      ]);
+    }
+  });
+
   context.subscriptions.push(validateJson);
   context.subscriptions.push(escapeJson);
   context.subscriptions.push(unescapeJson);
   context.subscriptions.push(beautifyJson);
   context.subscriptions.push(uglifyJson);
+  context.subscriptions.push(fixJson);
 }
 
 // this method is called when your extension is deactivated

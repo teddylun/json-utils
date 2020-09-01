@@ -1,5 +1,24 @@
 import * as JsonBigint from "json-bigint";
+import * as jsonic from "jsonic";
 
+export interface FixOptions {
+  indentation: string | number | undefined;
+}
+
+export interface FixResult {
+  status: string;
+  text?: string;
+  error?: any;
+}
+
+export enum FixStatus {
+  success = "ok",
+  failure = "error",
+}
+
+enum Error {
+  syntaxError = "SyntaxError",
+}
 class Helper {
   /**
    * isValid
@@ -63,6 +82,31 @@ class Helper {
     return this.isValid(text)
       ? JSON.stringify(JSON.parse(text), null, 0)
       : text;
+  }
+
+  /**
+   * fix
+   * @param text
+   * @param options
+   */
+  public fixText(text: string, options: FixOptions): FixResult {
+    try {
+      return {
+        status: FixStatus.success,
+        text: JSON.stringify(jsonic(text), null, options.indentation),
+      };
+    } catch (e) {
+      let result = { status: FixStatus.failure, error: { message: e.message } };
+      if (e.name === Error.syntaxError) {
+        result.error = Object.assign({}, result.error, {
+          line: e.line,
+          column: e.column,
+          foundLength: e.found.length,
+          message: `(${e.line}, ${e.column}) ${result.error.message}`,
+        });
+      }
+      return result;
+    }
   }
 }
 

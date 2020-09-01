@@ -19,19 +19,19 @@
 				"command": "extension.validateJson",
 				"title": "Validate",
 				"key": "ctrl+alt+v",
-        		"mac": "cmd+alt+v"
+				"mac": "cmd+alt+v"
 			},
 			{
 				"command": "extension.escapeJson",
 				"title": "Escape",
 				"key": "ctrl+alt+'",
-        		"mac": "cmd+alt+'"
+				"mac": "cmd+alt+'"
 			},
 			{
 				"command": "extension.unescapeJson",
 				"title": "Unescape",
 				"key": "ctrl+alt+;",
-        		"mac": "cmd+alt+;"
+				"mac": "cmd+alt+;"
 			},
 			{
 				"command": "extension.beautifyJson",
@@ -44,8 +44,26 @@
 				"title": "Uglify",
 				"key": "ctrl+alt+u",
 				"mac": "cmd+alt+u"
+			},
+			{
+				"command": "extension.fixJson",
+				"title": "Fix JSON"
 			}
-		]
+		],
+		"configuration": {
+            "type": "object",
+            "title": "Fix JSON configuration",
+            "properties": {
+                "jsonUtils.indentationSpaces": {
+                    "type": [
+                        "number",
+                        "null"
+                    ],
+                    "default": null,
+                    "description": "Number of spaces to use for indentation of formatted JSON output. If not set, your editor.tabSize setting is used."
+                }
+            }
+        }
 	},
 	"scripts": {
 		"vscode:prepublish": "yarn run compile",
@@ -57,6 +75,7 @@
 	},
 	"devDependencies": {
 		"@types/glob": "^7.1.3",
+		"@types/jsonic": "^0.3.0",
 		"@types/mocha": "^8.0.0",
 		"@types/node": "^14.0.27",
 		"@types/vscode": "^1.48.0",
@@ -69,6 +88,7 @@
 		"vscode-test": "^1.4.0"
 	},
 	"dependencies": {
-		"json-bigint": "^1.0.0"
+		"json-bigint": "^1.0.0",
+		"jsonic": "^0.3.1"
 	}
 }

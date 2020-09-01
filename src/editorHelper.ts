@@ -1,6 +1,19 @@
-import { TextEditor, Position, Range, Selection } from "vscode";
+import {
+  TextEditor,
+  Position,
+  Range,
+  Selection,
+  window,
+  workspace,
+} from "vscode";
 
 class EditorHelper {
+  public extensionName = "jsonUtils";
+  public decoration = window.createTextEditorDecorationType({
+    color: "white",
+    backgroundColor: "red",
+  });
+
   /**
    * This function is used to set the current document text
    * @param newText
