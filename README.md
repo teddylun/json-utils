@@ -1,65 +1,32 @@
-# json-utils README
+# json-utils
 
-This is the README for your extension "json-utils". After writing up a brief description, we recommend including the following sections.
+This vscode extension including some coolest features to manipulate JSON. For example: validate | beautify | uglify | escape | unescape | fix etc.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+As there are tons of vscode extensions with similar features out there but I still cannot find one of them can be fulfilled all of my requirements. Therefore, I would like make a all in one solution instead of many dependency with overlapping features.
 
-For example if there is an image subfolder under your extension project workspace:
+## Installation
 
-\!\[feature X\]\(images/feature-x.png\)
+Search json-utils via VScode extension marketplace
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+## Usage
+Validate: `cmd+ctl+v`
+Beautify: `cmd+ctl+b`
+uglify: `cmd+ctl+u`
+escape: `cmd+ctl+'`
+unescape: `cmd+ctl+;`
+fix: `cmd+ctl+>`
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+none for now
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
 ### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+Initial release of json utils with validate | beautify | uglify | escape | unescape | fix
 
 -----------------------------------------------------------------------------------------------------------
 
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
