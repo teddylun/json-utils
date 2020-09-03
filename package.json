@@ -1,6 +1,6 @@
 {
 	"name": "json-utils",
-	"displayName": "json-utils",
+	"displayName": "JSON utils",
 	"description": "json utils",
 	"version": "0.0.1",
 	"engines": {
