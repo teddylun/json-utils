@@ -1,7 +1,7 @@
 {
 	"name": "json-utils",
-	"displayName": "JSON utils",
-	"description": "json utils",
+	"displayName": "JSON Utils",
+	"description": "JSON Utils",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.48.0"
