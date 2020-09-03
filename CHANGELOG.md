@@ -6,4 +6,6 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
-- Initial release
+## [1.0.0] - 2020-09-03
+### Added
+- Initial release of json utils with validate | beautify | uglify | escape | unescape | fix

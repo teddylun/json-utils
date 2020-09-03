@@ -16,7 +16,7 @@ Beautify: `cmd+ctl+b`
 uglify: `cmd+ctl+u`
 escape: `cmd+ctl+'`
 unescape: `cmd+ctl+;`
-fix: `cmd+ctl+>`
+fix: simply use `Fix JSON` in command palette
 
 ## Known Issues
 
@@ -24,7 +24,7 @@ none for now
 
 ## Release Notes
 
-### 1.0.0
+
 
 Initial release of json utils with validate | beautify | uglify | escape | unescape | fix
 
