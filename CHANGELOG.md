@@ -9,3 +9,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [1.0.0] - 2020-09-03
 ### Added
 - Initial release of json utils with validate | beautify | uglify | escape | unescape | fix
+
+## [1.0.1] - 2020-09-04
+### Added
+- Updated icon and documentation

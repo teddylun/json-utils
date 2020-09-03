@@ -3,8 +3,8 @@
 	"displayName": "JSON Utils",
 	"description": "JSON Utils",
 	"publisher": "teddylun",
-	"version": "1.0.0",
-	"icon": "https://github.com/teddylun/json-utils/blob/master/src/assets/json_utils.png?raw=true",
+	"version": "1.0.1",
+	"icon": "images/json_utils.png",
 	"engines": {
 		"vscode": "^1.48.0"
 	},

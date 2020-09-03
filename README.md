@@ -1,4 +1,4 @@
-![JSON utils icon](https://github.com/teddylun/json-utils/blob/master/src/assets/json_utils.png?raw=true)
+![JSON utils icon](https://github.com/teddylun/json-utils/blob/master/images/json_utils.png?raw=true)
 
 # JSON Utils
 
@@ -20,7 +20,7 @@ As there are tons of vscode extensions with similar features out there but I sti
 - unescape: `cmd+ctl+;`
 - fix: simply use `Fix JSON` in command palette
 
-![Demo GIF](https://github.com/teddylun/json-utils/blob/master/src/assets/demo.gif?raw=true)
+![Demo GIF](https://github.com/teddylun/json-utils/blob/master/images/demo.gif?raw=true)
 
 ## Known Issues
 
