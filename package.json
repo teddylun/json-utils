@@ -3,7 +3,7 @@
 	"displayName": "JSON Utils",
 	"description": "JSON Utils",
 	"publisher": "teddylun",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"icon": "images/json_utils.png",
 	"engines": {
 		"vscode": "^1.48.0"
@@ -18,9 +18,9 @@
 		"uglify",
 		"escape",
 		"unescape",
-        "fix",
-        "format"
-    ],
+		"fix",
+		"format"
+	],
 	"activationEvents": [
 		"*"
 	],
@@ -63,19 +63,19 @@
 			}
 		],
 		"configuration": {
-            "type": "object",
-            "title": "Fix JSON configuration",
-            "properties": {
-                "jsonUtils.indentationSpaces": {
-                    "type": [
-                        "number",
-                        "null"
-                    ],
-                    "default": null,
-                    "description": "Number of spaces to use for indentation of formatted JSON output. If not set, your editor.tabSize setting is used."
-                }
-            }
-        }
+			"type": "object",
+			"title": "Fix JSON configuration",
+			"properties": {
+				"jsonUtils.indentationSpaces": {
+					"type": [
+						"number",
+						"null"
+					],
+					"default": null,
+					"description": "Number of spaces to use for indentation of formatted JSON output. If not set, your editor.tabSize setting is used."
+				}
+			}
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "yarn run compile",
@@ -104,13 +104,13 @@
 		"jsonic": "^0.3.1"
 	},
 	"repository": {
-        "type": "git",
-        "url": "https://github.com/teddylun/json-utils.git"
-    },
-    "bugs": {
-        "url": "https://github.com/teddylun/json-utils/issues"
-    },
-    "homepage": "https://github.com/teddylun/json-utils/blob/master/README.md",
+		"type": "git",
+		"url": "https://github.com/teddylun/json-utils.git"
+	},
+	"bugs": {
+		"url": "https://github.com/teddylun/json-utils/issues"
+	},
+	"homepage": "https://github.com/teddylun/json-utils/blob/master/README.md",
 	"license": "MIT",
 	"author": "Teddy Lun <yhlun@connect.ust.hk>"
 }
