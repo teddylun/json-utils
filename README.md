@@ -1,3 +1,5 @@
+![JSON utils icon](https://github.com/teddylun/json-utils/blob/master/src/assets/json_utils.png?raw=true)
+
 # JSON Utils
 
 This vscode extension including some coolest features to manipulate JSON. For example: validate | beautify | uglify | escape | unescape | fix etc.
@@ -8,7 +10,7 @@ As there are tons of vscode extensions with similar features out there but I sti
 
 ## Installation
 
-Search json-utils via VScode extension marketplace
+[Search JSON Utils via VScode extension marketplace](https://marketplace.visualstudio.com/items?itemName=teddylun.json-utils)
 
 ## Usage
 - Validate: `cmd+ctl+v`
