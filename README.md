@@ -26,7 +26,7 @@ none for now
 
 ## Release Notes
 
-View [CHANGELOG.md](CHANGELOG.md)
+View [CHANGELOG.md](https://github.com/teddylun/json-utils/blob/master/CHANGELOG.md)
 
 
 Initial release of json utils with validate | beautify | uglify | escape | unescape | fix

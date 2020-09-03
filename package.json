@@ -2,13 +2,20 @@
 	"name": "json-utils",
 	"displayName": "JSON Utils",
 	"description": "JSON Utils",
-	"version": "0.0.1",
+	"publisher": "teddylun",
+	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.48.0"
 	},
 	"categories": [
-		"Other"
+		"Other",
+		"Formatters"
 	],
+	"keywords": [
+        "JSON",
+        "fix",
+        "format"
+    ],
 	"activationEvents": [
 		"*"
 	],
@@ -90,5 +97,15 @@
 	"dependencies": {
 		"json-bigint": "^1.0.0",
 		"jsonic": "^0.3.1"
-	}
+	},
+	"repository": {
+        "type": "git",
+        "url": "https://github.com/teddylun/json-utils.git"
+    },
+    "bugs": {
+        "url": "https://github.com/teddylun/json-utils/issues"
+    },
+    "homepage": "https://github.com/teddylun/json-utils/blob/master/README.md",
+	"license": "MIT",
+	"author": "Teddy Lun <yhlun@connect.ust.hk>"
 }
