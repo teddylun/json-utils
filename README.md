@@ -1,4 +1,4 @@
-![JSON utils icon](https://github.com/teddylun/json-utils/blob/master/src/assets/json_utils_xl.png?raw=true)
+![JSON utils icon](https://github.com/teddylun/json-utils/blob/master/src/assets/json_utils.png?raw=true)
 
 # JSON Utils
 
