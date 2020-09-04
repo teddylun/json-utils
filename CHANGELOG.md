@@ -13,3 +13,12 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [1.0.1] - 2020-09-04
 ### Added
 - Updated icon and documentation
+
+## [1.0.2] - 2020-09-04
+### Added
+- Updated icon and documentation
+
+
+## [1.0.3] - 2020-09-04
+### Added
+- added Keybindings for utils

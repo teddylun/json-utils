@@ -18,7 +18,7 @@ As there are tons of vscode extensions with similar features out there but I sti
 - uglify: `cmd+ctl+u`
 - escape: `cmd+ctl+'`
 - unescape: `cmd+ctl+;`
-- fix: simply use `Fix JSON` in command palette
+- fix: `cmd+ctl+.`
 
 ![Demo GIF](https://github.com/teddylun/json-utils/blob/master/images/demo.gif?raw=true)
 
