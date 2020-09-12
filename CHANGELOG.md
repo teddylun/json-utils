@@ -18,7 +18,6 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ### Added
 - Updated icon and documentation
 
-
 ## [1.0.3] - 2020-09-04
 ### Added
 - Added Keybindings for utils
