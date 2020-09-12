@@ -37,3 +37,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [1.0.7] - 2020-09-12
 ### Updated
 - Updated doc
+
+## [1.0.8] - 2020-09-12
+### Updated
+- Updated demo gif
