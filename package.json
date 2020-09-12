@@ -3,7 +3,7 @@
 	"displayName": "JSON Utils",
 	"description": "JSON Utils",
 	"publisher": "teddylun",
-	"version": "1.0.7",
+	"version": "1.0.8",
 	"icon": "images/json_utils.png",
 	"engines": {
 		"vscode": "^1.48.0"
