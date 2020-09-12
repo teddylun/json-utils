@@ -21,4 +21,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [1.0.3] - 2020-09-04
 ### Added
-- added Keybindings for utils
+- Added Keybindings for utils
+
+## [1.0.4] - 2020-09-12
+### Updated
+- Updated commands' display with package name

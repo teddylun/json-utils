@@ -29,35 +29,35 @@
 		"commands": [
 			{
 				"command": "extension.validateJson",
-				"title": "Validate"
+				"title": "JSON-utils:Validate"
 			},
 			{
 				"command": "extension.escapeJson",
-				"title": "Escape",
+				"title": "JSON-utils:Escape",
 				"key": "ctrl+alt+'",
 				"mac": "cmd+alt+'"
 			},
 			{
 				"command": "extension.unescapeJson",
-				"title": "Unescape",
+				"title": "JSON-utils:Unescape",
 				"key": "ctrl+alt+;",
 				"mac": "cmd+alt+;"
 			},
 			{
 				"command": "extension.beautifyJson",
-				"title": "Beautify",
+				"title": "JSON-utils:Beautify",
 				"key": "ctrl+alt+b",
 				"mac": "cmd+alt+b"
 			},
 			{
 				"command": "extension.uglifyJson",
-				"title": "Uglify",
+				"title": "JSON-utils:Uglify",
 				"key": "ctrl+alt+u",
 				"mac": "cmd+alt+u"
 			},
 			{
 				"command": "extension.fixJson",
-				"title": "Fix JSON"
+				"title": "JSON-utils:Fix"
 			}
 		],
 		"keybindings": [
