@@ -33,27 +33,23 @@
 			},
 			{
 				"command": "extension.escapeJson",
-				"title": "JSON-utils:Escape",
-				"key": "ctrl+alt+'",
-				"mac": "cmd+alt+'"
+				"title": "JSON-utils:Escape"
 			},
 			{
 				"command": "extension.unescapeJson",
-				"title": "JSON-utils:Unescape",
-				"key": "ctrl+alt+;",
-				"mac": "cmd+alt+;"
+				"title": "JSON-utils:Unescape"
 			},
 			{
 				"command": "extension.beautifyJson",
-				"title": "JSON-utils:Beautify",
-				"key": "ctrl+alt+b",
-				"mac": "cmd+alt+b"
+				"title": "JSON-utils:Beautify"
 			},
 			{
 				"command": "extension.uglifyJson",
-				"title": "JSON-utils:Uglify",
-				"key": "ctrl+alt+u",
-				"mac": "cmd+alt+u"
+				"title": "JSON-utils:Uglify"
+			},
+			{
+				"command": "extension.toJsJson",
+				"title": "JSON-utils:ToJsJson"
 			},
 			{
 				"command": "extension.fixJson",
@@ -85,6 +81,11 @@
 				"command": "extension.uglifyJson",
 				"key": "ctrl+alt+u",
 				"mac": "cmd+alt+u"
+			},
+			{
+				"command": "extension.toJsJson",
+				"key": "ctrl+alt+shift+.",
+				"mac": "cmd+alt+ctrl+."
 			},
 			{
 				"command": "extension.fixJson",

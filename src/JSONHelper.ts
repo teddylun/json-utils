@@ -85,6 +85,16 @@ class Helper {
   }
 
   /**
+   * to JS JSON
+   * @param text
+   */
+  public toJSJson(text: string, tabSize?: number | string): string {
+    return this.isValid(text)
+      ? JSON.stringify(JSON.parse(text), null, tabSize).replace(/"/g, "'")
+      : text;
+  }
+
+  /**
    * fix
    * @param text
    * @param options

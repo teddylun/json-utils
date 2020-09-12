@@ -22,6 +22,7 @@ enum RegisterCommand {
   unescape = "extension.unescapeJson",
   beautify = "extension.beautifyJson",
   uglify = "extension.uglifyJson",
+  toJsJson = "extension.toJsJson",
   fix = "extension.fixJson",
 }
 // this method is called when your extension is activated
@@ -125,7 +126,7 @@ export function activate(context: ExtensionContext) {
     // Beautify JSON
     let beautifiedJson = jsonHelper.beautify(
       trimmedText,
-      editor.options.insertSpaces ? editor.options.tabSize : "\t"
+      editorHelper.getTabSize(editor)
     );
     if (beautifiedJson !== trimmedText) {
       let tabStyle = editor.options.insertSpaces ? " " : "\t";
@@ -161,6 +162,24 @@ export function activate(context: ExtensionContext) {
     let uglifiedJson = jsonHelper.uglify(trimmedText);
     if (uglifiedJson !== trimmedText) {
       editorHelper.setText(editor, uglifiedJson);
+    }
+  });
+
+  /**
+   * toJsJson
+   */
+  let toJsJson = commands.registerCommand(RegisterCommand.toJsJson, () => {
+    let editor = window.activeTextEditor;
+    if (!editor) {
+      return;
+    }
+    const { document } = editor;
+    let text = document.getText(editor.selection) || document.getText();
+    let trimmedText = editorHelper.removeWhiteSpace(text);
+    let tabSize = editorHelper.getTabSize(editor);
+    let result = jsonHelper.toJSJson(text, tabSize);
+    if (result !== trimmedText) {
+      editorHelper.setText(editor, result);
     }
   });
 
@@ -208,6 +227,7 @@ export function activate(context: ExtensionContext) {
   context.subscriptions.push(unescapeJson);
   context.subscriptions.push(beautifyJson);
   context.subscriptions.push(uglifyJson);
+  context.subscriptions.push(toJsJson);
   context.subscriptions.push(editorHelper.decoration);
   context.subscriptions.push(fixJson);
 }

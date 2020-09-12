@@ -48,6 +48,14 @@ class EditorHelper {
   public removeWhiteSpace(text: string): string {
     return text.trim().replace(/(?:^[\n\t\r]|[\n\t\r]$)/g, "");
   }
+
+  /**
+   * Get tab Size
+   * @param editor
+   */
+  public getTabSize(editor: TextEditor): number | string | undefined {
+    return editor.options.insertSpaces ? editor.options.tabSize : "\t";
+  }
 }
 
 export default EditorHelper;

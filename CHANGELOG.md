@@ -25,3 +25,11 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [1.0.4] - 2020-09-12
 ### Updated
 - Updated commands' display with package name
+
+## [1.0.5] - 2020-09-12
+### Updated
+- Updated commands' display with package name
+
+## [1.0.6] - 2020-09-12
+### Added
+- Added convert to Javascript JSON
