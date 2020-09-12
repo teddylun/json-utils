@@ -20,7 +20,7 @@ As there are tons of vscode extensions with similar features out there but I sti
 - unescape: `cmd+ctl+;`
 - fix: `cmd+ctl+.`
 
-![Demo GIF](https://github.com/teddylun/json-utils/blob/master/images/demo.gif?raw=true)
+![Demo GIF](https://github.com/teddylun/json-utils/blob/master/images/demo_1.gif?raw=true)
 
 ## Known Issues
 
